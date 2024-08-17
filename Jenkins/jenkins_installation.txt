@@ -121,7 +121,9 @@ sudo -i
 apt update -y
 apt-get install default-jdk -y
 java --version
-cd /opt/
+
+#####install tomcat go to opt as directory as mentioned below.
+cd /opt/ #tomcat service can be started from cs/opt/tomcat/bin with command ./startup.sh
 wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz
 tar -xvzf /opt/apache-tomcat-8.5.99.tar.gz
 mv apache-tomcat-8.5.99 tomcat
